@@ -1,0 +1,8 @@
+
+server:
+  port: 8092
+spring:
+  application:
+    name: gameexternaldemo
+logging:
+  config: classpath:logback-spring.xml

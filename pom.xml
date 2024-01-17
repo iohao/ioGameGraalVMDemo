@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.iogamegraalvmdemo</groupId>
+    <artifactId>iogamegraalvmdemo</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <name>iogamegraalvmdemo</name>
+    <description>iogamegraalvmdemo</description>
+    <packaging>pom</packaging>
+    <modules>
+        <module>gatewaydemo</module>
+        <module>gameexternaldemo</module>
+        <module>gameserverdemo</module>
+        <module>gameclientdemo</module>
+    </modules>
+    <properties>
+        <java.version>17</java.version>
+        <maven.compiler.source>17</maven.compiler.source>
+        <maven.compiler.target>17</maven.compiler.target>
+        <maven.compiler.encoding>UTF-8</maven.compiler.encoding>
+        <spring-boot-maven-plugin.version>3.0.5</spring-boot-maven-plugin.version>
+        <spring-boot.version>3.0.5</spring-boot.version>
+        <native-maven-plugin.version>0.9.28</native-maven-plugin.version>
+        <game.version>17.1.22</game.version>
+        <jprotobuf-precompile-plugin.version>2.2.7</jprotobuf-precompile-plugin.version>
+    </properties>
+
+
+</project>

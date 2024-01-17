@@ -1,0 +1,27 @@
+[
+  {
+    "name": "java.lang.Runtime",
+    "methods": [
+      {
+        "name": "version",
+        "parameterTypes": []
+      }
+    ]
+  },
+  {
+    "name": "java.lang.Runtime$Version",
+    "allPublicMethods": true,
+    "allDeclaredClasses": true,
+    "allPublicClasses": true,
+    "allDeclaredConstructors": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "reactor.netty.transport.ServerTransport$Acceptor",
+    "allPublicMethods": true,
+    "allDeclaredClasses": true,
+    "allPublicClasses": true,
+    "allDeclaredConstructors": true,
+    "allPublicConstructors": true
+  }
+]
