@@ -16,7 +16,7 @@
 * 基于JVM启动耗时： 约2.8s
   ![](docs/gateway_jvm_starter.jpg)
 
-> 说明：该示例因为基于springboot，所以启动耗时稍长；如果不基于springboot框架，启动ioGame的相关服务实际会很快
+> 说明：该示例因为基于springboot，所以启动耗时稍长；如果不基于springboot框架，启动ioGame的相关服务实际启动会很快
 
 * native方式启动耗时：约760ms,仅为JVM的1/3左右
   ![](docs/gateway_native_starter.jpg)
@@ -31,7 +31,7 @@
 
 ## 编译
 
-* 网关服务(`gatewaydemo`)、对外服务(`gameexternaldemo`)、逻辑服务(`gameserverdemo`) 可以运行工程在的 `native-build.bat`
+* 网关服务(`gatewaydemo`)、对外服务(`gameexternaldemo`)、逻辑服务(`gameserverdemo`) 可以运行工程下的 `native-build.bat`
   进行编译，或者直接使用mvn命令：
 
 ```shell
@@ -55,7 +55,7 @@
 
 * 逻辑服务中使用了`MethodAccess`、`ConstructorAccess`
   ，在native模式下暂时没有找到合适的方法支持，因此在native-image编译时替换了`MethodAccess.get`
-  和`ConstructorAccess.get方法`
+  和`ConstructorAccess.get`方法
 * 在对外服务和逻辑服务中，均使用了proto对象，必须使用`jprotobuf-precompile-plugin`
   插件，确保在编译时能正确的生成对应的`$$JProtoBufClass`类
 
